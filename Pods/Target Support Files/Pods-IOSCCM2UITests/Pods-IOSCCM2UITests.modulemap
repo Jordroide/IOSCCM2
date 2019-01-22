@@ -1,0 +1,6 @@
+framework module Pods_IOSCCM2UITests {
+  umbrella header "Pods-IOSCCM2UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

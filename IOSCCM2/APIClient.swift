@@ -1,4 +1,3 @@
-//
 //  APIClient.swift
 //  IOSCCM2
 //
@@ -7,3 +6,14 @@
 //
 
 import Foundation
+import Alamofire
+
+class APIClient {
+    static func getResponseForDns(withCompletion completion: @escaping
+        (Result<Data>) -> Void) {
+        Alamofire.request("https://api.domainsdb.info/search?query=facebook")
+            .responseData{(dataResponse) in print(dataResponse)
+                completion(dataResponse.result)
+        }
+    }
+}

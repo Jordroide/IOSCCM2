@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		11AF201DA3B67B8586CA7283 /* Pods_IOSCCM2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 165405EAB0B3056CF652E733 /* Pods_IOSCCM2Tests.framework */; };
 		205E2851B4343E4876955F95 /* Pods_IOSCCM2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE636E6656820DAE1E20BB3 /* Pods_IOSCCM2UITests.framework */; };
+		27272C9021F72F5200C9C6F9 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27272C8F21F72F5200C9C6F9 /* APIClient.swift */; };
+		27272C9221F753ED00C9C6F9 /* Domains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27272C9121F753ED00C9C6F9 /* Domains.swift */; };
+		27272C9421F7624600C9C6F9 /* DomainsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27272C9321F7624600C9C6F9 /* DomainsTableViewController.swift */; };
 		2771566E21F70B5E00707F0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2771566D21F70B5E00707F0A /* AppDelegate.swift */; };
 		2771567021F70B5E00707F0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2771566F21F70B5E00707F0A /* ViewController.swift */; };
 		2771567321F70B5E00707F0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2771567121F70B5E00707F0A /* Main.storyboard */; };
@@ -38,6 +41,9 @@
 
 /* Begin PBXFileReference section */
 		165405EAB0B3056CF652E733 /* Pods_IOSCCM2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSCCM2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27272C8F21F72F5200C9C6F9 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		27272C9121F753ED00C9C6F9 /* Domains.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domains.swift; sourceTree = "<group>"; };
+		27272C9321F7624600C9C6F9 /* DomainsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DomainsTableViewController.swift; path = Assets.xcassets/DomainsTableViewController.swift; sourceTree = "<group>"; };
 		2771566A21F70B5E00707F0A /* IOSCCM2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSCCM2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2771566D21F70B5E00707F0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2771566F21F70B5E00707F0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +126,9 @@
 				2771567421F70B5F00707F0A /* Assets.xcassets */,
 				2771567621F70B5F00707F0A /* LaunchScreen.storyboard */,
 				2771567921F70B5F00707F0A /* Info.plist */,
+				27272C8F21F72F5200C9C6F9 /* APIClient.swift */,
+				27272C9121F753ED00C9C6F9 /* Domains.swift */,
+				27272C9321F7624600C9C6F9 /* DomainsTableViewController.swift */,
 			);
 			path = IOSCCM2;
 			sourceTree = "<group>";
@@ -393,6 +402,9 @@
 			files = (
 				2771567021F70B5E00707F0A /* ViewController.swift in Sources */,
 				2771566E21F70B5E00707F0A /* AppDelegate.swift in Sources */,
+				27272C9021F72F5200C9C6F9 /* APIClient.swift in Sources */,
+				27272C9221F753ED00C9C6F9 /* Domains.swift in Sources */,
+				27272C9421F7624600C9C6F9 /* DomainsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

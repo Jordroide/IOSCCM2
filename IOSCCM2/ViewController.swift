@@ -27,6 +27,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UINavigationBar.appearance().tintColor = UIColor.blue
+        self.title = "My beautiful domains spammer"
         mTableView.delegate = self
         mTableView.dataSource = self
         
@@ -34,7 +36,14 @@ class ViewController: UIViewController {
     }
     
     @objc func onButtonClick(sender: UIButton){
-        convertWithPain()
+        self.mEditText.attributedPlaceholder = nil
+        if(!((mEditText.text?.isEmpty)!)) {
+            convertWithPain()
+            dismissKeyboard()
+        } else {
+            self.mTableView.isHidden = true
+            self.mEditText.attributedPlaceholder = NSAttributedString(string: "Au minimum un caractère", attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
+        }
     }
     
     func convertWithPain() {
@@ -44,6 +53,7 @@ class ViewController: UIViewController {
             case .success(let value):
                 do {
                     print("Request successed")
+                    
                     let decoder = JSONDecoder();
                     let myData = try decoder.decode(MyData.self, from: value)
     
@@ -58,11 +68,17 @@ class ViewController: UIViewController {
                 }
                 
             case .failure(let error):
-                print("Request failed")
-                print(error.localizedDescription)
+                 print("Request failed")
+                 print(error.localizedDescription)
+                 self?.statusCode = 1000
+                 self?.isSucess = false
             }
             self?.manageLogic()
         }
+    }
+    
+    func dismissKeyboard(){
+        view.endEditing(true)
     }
     
     func manageLogic() {
@@ -75,8 +91,10 @@ class ViewController: UIViewController {
             switch self.statusCode {
             case 404:
                  self.sendEmail()
+            case 1000:
+                 self.mEditText.text = "Url is not valid"
             default:
-                  self.mEditText.text = "Undefined"
+                 self.mEditText.text = "Une erreur est survenue ! Pikachu à l'attaque !!!"
             }
         }
     }

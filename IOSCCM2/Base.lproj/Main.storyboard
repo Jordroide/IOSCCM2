@@ -31,7 +31,7 @@
                                 </constraints>
                                 <state key="normal" title="Rechercher le domaine"/>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UOv-tl-7W8" customClass="View">
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UOv-tl-7W8" customClass="View">
                                 <rect key="frame" x="0.0" y="228" width="414" height="634"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -98,45 +98,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POT-vI-gDX">
-                                <rect key="frame" x="0.0" y="104" width="414" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POT-vI-gDX">
+                                <rect key="frame" x="0.0" y="104" width="414" height="35"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raG-tT-eWG">
-                                <rect key="frame" x="16" y="203" width="382" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVz-Iq-0f2" colorLabel="IBBuiltInLabel-Orange">
-                                <rect key="frame" x="16" y="150" width="382" height="21"/>
+                                <rect key="frame" x="16" y="155" width="382" height="21"/>
                                 <accessibility key="accessibilityConfiguration" hint="mgt;dfpogj"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raG-tT-eWG">
+                                <rect key="frame" x="16" y="208" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWZ-k2-kgN">
+                                <rect key="frame" x="16" y="261" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IsDead" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQ9-sL-3bz">
+                                <rect key="frame" x="16" y="314" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resolvable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mps-0k-TkU">
+                                <rect key="frame" x="16" y="367" width="82.666666666666671" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zD9-3T-Nt0">
+                                <rect key="frame" x="345" y="362" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yGE-gy-fQr">
+                                <rect key="frame" x="345" y="309" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="xQ9-sL-3bz" firstAttribute="top" secondItem="qWZ-k2-kgN" secondAttribute="bottom" constant="32" id="7gU-ZX-WSW"/>
                             <constraint firstItem="POT-vI-gDX" firstAttribute="top" secondItem="OXw-1e-1at" secondAttribute="top" constant="16" id="DMI-ZI-NAX"/>
+                            <constraint firstItem="xQ9-sL-3bz" firstAttribute="leading" secondItem="OXw-1e-1at" secondAttribute="leading" constant="16" id="FhB-P1-zDE"/>
+                            <constraint firstItem="qWZ-k2-kgN" firstAttribute="leading" secondItem="OXw-1e-1at" secondAttribute="leading" constant="16" id="G1F-36-6Fa"/>
+                            <constraint firstItem="OXw-1e-1at" firstAttribute="trailing" secondItem="zD9-3T-Nt0" secondAttribute="trailing" constant="16" id="K0d-m8-Fkm"/>
+                            <constraint firstItem="zD9-3T-Nt0" firstAttribute="top" secondItem="yGE-gy-fQr" secondAttribute="bottom" constant="32" id="Lik-dP-iNZ"/>
                             <constraint firstAttribute="trailing" secondItem="TVz-Iq-0f2" secondAttribute="trailing" constant="16" id="PRn-jS-gTL"/>
+                            <constraint firstItem="mps-0k-TkU" firstAttribute="top" secondItem="xQ9-sL-3bz" secondAttribute="bottom" constant="32" id="Rvz-FD-O5l"/>
                             <constraint firstItem="TVz-Iq-0f2" firstAttribute="top" secondItem="POT-vI-gDX" secondAttribute="bottom" constant="16" id="SQL-Xl-wen"/>
                             <constraint firstItem="POT-vI-gDX" firstAttribute="top" secondItem="OXw-1e-1at" secondAttribute="top" constant="16" id="TJf-lv-FhY"/>
+                            <constraint firstItem="mps-0k-TkU" firstAttribute="leading" secondItem="OXw-1e-1at" secondAttribute="leading" constant="16" id="VFJ-Hj-oMk"/>
                             <constraint firstItem="raG-tT-eWG" firstAttribute="trailing" secondItem="OXw-1e-1at" secondAttribute="trailing" constant="-16" id="c5y-N1-SHb"/>
                             <constraint firstItem="TVz-Iq-0f2" firstAttribute="leading" secondItem="OXw-1e-1at" secondAttribute="leading" constant="16" id="cbK-Ds-jAC"/>
+                            <constraint firstItem="qWZ-k2-kgN" firstAttribute="top" secondItem="raG-tT-eWG" secondAttribute="bottom" constant="32" id="eTA-bx-nXI"/>
                             <constraint firstItem="raG-tT-eWG" firstAttribute="top" secondItem="TVz-Iq-0f2" secondAttribute="bottom" constant="32" id="g10-uI-alT"/>
+                            <constraint firstItem="OXw-1e-1at" firstAttribute="trailing" secondItem="qWZ-k2-kgN" secondAttribute="trailing" constant="16" id="hdS-DR-5Ci"/>
                             <constraint firstItem="POT-vI-gDX" firstAttribute="width" secondItem="902-pS-S5Y" secondAttribute="width" id="lJv-5S-WAo"/>
+                            <constraint firstItem="OXw-1e-1at" firstAttribute="trailing" secondItem="yGE-gy-fQr" secondAttribute="trailing" constant="16" id="suh-BD-sjj"/>
                             <constraint firstItem="POT-vI-gDX" firstAttribute="centerX" secondItem="OXw-1e-1at" secondAttribute="centerX" id="tUf-cm-lyg"/>
+                            <constraint firstItem="yGE-gy-fQr" firstAttribute="top" secondItem="qWZ-k2-kgN" secondAttribute="bottom" constant="32" id="xe8-Vy-i85"/>
                             <constraint firstItem="raG-tT-eWG" firstAttribute="leading" secondItem="OXw-1e-1at" secondAttribute="leading" constant="16" id="zKf-El-zTD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OXw-1e-1at"/>
                     </view>
                     <connections>
+                        <outlet property="labelCountry" destination="qWZ-k2-kgN" id="K82-7V-KDj"/>
                         <outlet property="labelDomains" destination="POT-vI-gDX" id="sxI-9w-YtQ"/>
+                        <outlet property="labelIsDead" destination="xQ9-sL-3bz" id="Gj0-Mh-hpS"/>
                         <outlet property="labelSuffix" destination="TVz-Iq-0f2" id="K9Q-Kz-R1e"/>
                         <outlet property="labelUpdateDate" destination="raG-tT-eWG" id="ita-Rq-egK"/>
+                        <outlet property="switchIsDead" destination="yGE-gy-fQr" id="eJd-vd-kUX"/>
+                        <outlet property="switchResolvable" destination="zD9-3T-Nt0" id="WoZ-Qm-vkY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vlc-5X-ieP" userLabel="First Responder" sceneMemberID="firstResponder"/>

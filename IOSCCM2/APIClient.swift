@@ -11,6 +11,7 @@ import Alamofire
 class APIClient {
     static func getResponseForDns(domainToSearch: String, withCompletion completion: @escaping
         (DataResponse<Data>) -> Void) {
+        print("https://api.domainsdb.info/search?query=" +  domainToSearch)
         Alamofire.request("https://api.domainsdb.info/search?query=" +  domainToSearch)
             .responseData{(dataResponse) in print(dataResponse)
                 completion(dataResponse)

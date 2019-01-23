@@ -23,7 +23,7 @@ class Domain: Codable {
     let country: String?
     let ns: [String]?
     let resolvable: Bool?
-    let cname: String?
+    let cname: [String]?
     let mx: [MX]?
     
     enum CodingKeys: String, CodingKey {
@@ -45,5 +45,4 @@ class Domain: Codable {
 class MX: Codable {
     let exchange: String?
     let priority: Int?
-
 }

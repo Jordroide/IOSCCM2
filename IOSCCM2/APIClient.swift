@@ -9,11 +9,11 @@ import Foundation
 import Alamofire
 
 class APIClient {
-    static func getResponseForDns(withCompletion completion: @escaping
-        (Result<Data>) -> Void) {
-        Alamofire.request("https://api.domainsdb.info/search?query=facebook")
+    static func getResponseForDns(domainToSearch: String, withCompletion completion: @escaping
+        (DataResponse<Data>) -> Void) {
+        Alamofire.request("https://api.domainsdb.info/search?query=" +  domainToSearch)
             .responseData{(dataResponse) in print(dataResponse)
-                completion(dataResponse.result)
+                completion(dataResponse)
         }
     }
 }

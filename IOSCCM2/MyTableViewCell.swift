@@ -10,6 +10,8 @@ import UIKit
 
 class MyTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var labelDomain: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +22,8 @@ class MyTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+    func fill(withData domains:Domain) {
+        labelDomain.text = domains.domain
+    }
 }

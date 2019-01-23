@@ -34,6 +34,32 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UOv-tl-7W8" customClass="View">
                                 <rect key="frame" x="0.0" y="184" width="414" height="678"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="1A7-Kc-aAd" customClass="MyTableViewCell" customModule="IOSCCM2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1A7-Kc-aAd" id="k7N-7H-atj">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lS-tN-6cd">
+                                                    <rect key="frame" x="16" y="6" width="382" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="4lS-tN-6cd" secondAttribute="trailing" constant="16" id="Mrx-a8-UfX"/>
+                                                <constraint firstItem="4lS-tN-6cd" firstAttribute="centerX" secondItem="k7N-7H-atj" secondAttribute="centerX" id="jH8-Hn-vJh"/>
+                                                <constraint firstItem="4lS-tN-6cd" firstAttribute="leading" secondItem="k7N-7H-atj" secondAttribute="leading" constant="16" id="sEd-xs-erY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelDomain" destination="4lS-tN-6cd" id="wKI-Ou-MhG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -52,14 +78,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="mButton" destination="gH9-67-8Ta" id="daa-aq-JUD"/>
-                        <outlet property="mEditText" destination="IQR-dJ-vN0" id="kdz-yp-hai"/>
-                        <outlet property="mTableView" destination="UOv-tl-7W8" id="wFw-Yl-LLR"/>
+                        <outlet property="mButton" destination="gH9-67-8Ta" id="rff-vU-cWq"/>
+                        <outlet property="mEditText" destination="IQR-dJ-vN0" id="0XL-Yy-rv7"/>
+                        <outlet property="mTableView" destination="UOv-tl-7W8" id="wDN-gz-GmR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+            <point key="canvasLocation" x="52.173913043478265" y="26.785714285714285"/>
         </scene>
     </scenes>
 </document>

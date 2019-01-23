@@ -12,6 +12,7 @@
 		27272C9021F72F5200C9C6F9 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27272C8F21F72F5200C9C6F9 /* APIClient.swift */; };
 		27272C9621F85CE600C9C6F9 /* MyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27272C9521F85CE600C9C6F9 /* MyData.swift */; };
 		27272C9821F8613700C9C6F9 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27272C9721F8613700C9C6F9 /* MyTableViewCell.swift */; };
+		27272C9A21F87F3900C9C6F9 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27272C9921F87F3900C9C6F9 /* DetailsViewController.swift */; };
 		2771566E21F70B5E00707F0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2771566D21F70B5E00707F0A /* AppDelegate.swift */; };
 		2771567021F70B5E00707F0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2771566F21F70B5E00707F0A /* ViewController.swift */; };
 		2771567321F70B5E00707F0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2771567121F70B5E00707F0A /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		27272C8F21F72F5200C9C6F9 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		27272C9521F85CE600C9C6F9 /* MyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyData.swift; sourceTree = "<group>"; };
 		27272C9721F8613700C9C6F9 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		27272C9921F87F3900C9C6F9 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		2771566A21F70B5E00707F0A /* IOSCCM2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSCCM2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2771566D21F70B5E00707F0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2771566F21F70B5E00707F0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				27272C8F21F72F5200C9C6F9 /* APIClient.swift */,
 				27272C9521F85CE600C9C6F9 /* MyData.swift */,
 				27272C9721F8613700C9C6F9 /* MyTableViewCell.swift */,
+				27272C9921F87F3900C9C6F9 /* DetailsViewController.swift */,
 			);
 			path = IOSCCM2;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				27272C9021F72F5200C9C6F9 /* APIClient.swift in Sources */,
 				27272C9821F8613700C9C6F9 /* MyTableViewCell.swift in Sources */,
 				27272C9621F85CE600C9C6F9 /* MyData.swift in Sources */,
+				27272C9A21F87F3900C9C6F9 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

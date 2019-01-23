@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     var myData: MyData!
     var domains: [Domain] = []
     
+    var myIndex = 0;
+    
     var isSucess: Bool = true
     
     override func viewDidLoad() {
@@ -117,8 +119,19 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        myIndex = indexPath.row
         let cell: MyTableViewCell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! MyTableViewCell
-        cell.fill(withData: domains[indexPath.row])
+        cell.fill(withData: domains[myIndex])
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        myIndex = indexPath.row
+        performSegue(withIdentifier: "details", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let details = segue.destination as? DetailsViewController
+        details?.myDomain = domains[myIndex]
     }
 }
